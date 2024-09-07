@@ -81,6 +81,12 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--Very-dark-blue);
     padding: 1rem 2rem;
     letter-spacing: 3px;
+    font-weight: var(--fw-medium);
+
+}
+.main__btn:hover {
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
 }
 .black-aside {
     background-color: var(--Very-dark-blue);
@@ -142,8 +148,9 @@ hr {
     top: 0;
     right: 0;
     background-color: #fff;
-    min-height: 100vh;
+    min-height: 100%;
     width: 70%;
+    display: none;
 
 }
 .menu-list {
@@ -159,6 +166,7 @@ hr {
     font-size: 1.3rem;
     font-weight: var(--fw-medium);
     cursor: pointer;
+    color: var(--Dark-grayish-blue);
 }
 #img {
     display: flex;
@@ -167,6 +175,48 @@ hr {
     cursor: pointer;
 
 }
+.menu-list__item:hover {
+    color: var(--Soft-red);
+}
+.black-aside__h4:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
+
+}
+.highlighted-text:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .main_img-mobile {
+        display: none;
+    }
+    .main_img-desktop {
+        display: block;
+        width: 100%;
+    }
+    .headings{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .p_btn {
+        margin-top: 1rem;
+        margin-left: 2rem;
+
+    }
+    .black-aside {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
 
 
 
